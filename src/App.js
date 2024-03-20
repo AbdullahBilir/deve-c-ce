@@ -48,22 +48,27 @@ function App() {
 
   return (
     <>
-      <div className="container my-5 row ">
-        {devecuce ? <Deve /> : <Cuce />}
-        <div className="button-container">
-          <button
-            onClick={devHesapla}
-            className={`btn btn-primary m-2 ${click ? "opacity" : ""}`}
-          >
-            Deve
-          </button>
-          <button
-            onClick={cucHesapla}
-            className={`btn btn-primary ${click ? "opacity" : ""}`}
-          >
-            Cüce
-          </button>
-          <div className="p-2">Skor:{sayac} </div>
+      <div className="main">
+        <div className="row">
+          <h2>Deve Cüce</h2>
+          {devecuce ? <Deve /> : <Cuce />}
+          <div className="button-container">
+            <button
+              onClick={devHesapla}
+              className={` btn btn-primary dev-button ${
+                click ? "opacity" : ""
+              }`}
+            >
+              Deve
+            </button>
+            <button
+              onClick={cucHesapla}
+              className={`btn btn-primary cuc-button ${click ? "opacity" : ""}`}
+            >
+              Cüce
+            </button>
+            <div className="p-2 skor">Skor = {sayac} </div>
+          </div>
         </div>
       </div>
     </>

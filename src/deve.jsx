@@ -1,7 +1,7 @@
 function Deve() {
   return (
-    <div className="m-4 text-white bg-success p-2 col-lg-12 col-md-6 col-sm-4 ">
-      Deve
+    <div className="p-4 text-white">
+      <p className="p-text">Deve </p>
     </div>
   );
 }

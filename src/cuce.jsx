@@ -1,7 +1,7 @@
 function Cuce() {
   return (
-    <div className="text-white bg-success m-4 p-2 col-lg-12 col-md-6 col-sm-4">
-      Cuce
+    <div className="p-4 text-white">
+      <p className="p-text">Cuce </p>
     </div>
   );
 }
